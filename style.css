@@ -1,0 +1,106 @@
+/* Reset dan dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #000;
+    color: #e0e0e0;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 50px 20px;
+    overflow-x: hidden;
+  }
+  
+  /* Header logo */
+  img {
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px red;
+    margin-bottom: 25px;
+  }
+  
+  /* Judul utama */
+  h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 0 0 15px red;
+    margin-bottom: 10px;
+  }
+  
+  /* Subjudul */
+  h2 {
+    font-size: 20px;
+    font-weight: normal;
+    margin: 20px auto;
+    max-width: 700px;
+    line-height: 1.6;
+    color: #ff4444;
+  }
+  
+  /* Pesan dan link */
+  p {
+    font-size: 16px;
+    margin: 15px auto;
+    max-width: 600px;
+    line-height: 1.6;
+  }
+  
+  a {
+    color: #00ff99;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    color: #ff4444;
+    transition: 0.3s ease;
+  }
+  
+  /* Garis pemisah */
+  hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, #ff0000, #000, #ff0000);
+    margin: 30px auto;
+    width: 80%;
+  }
+  
+  /* Signature */
+  .signature {
+    margin-top: 40px;
+    font-size: 20px;
+    color: #ff0000;
+    font-style: italic;
+  }
+  
+  /* Marquee */
+  marquee {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #111;
+    color: #00ffcc;
+    padding: 10px 0;
+    font-weight: bold;
+    border-top: 2px solid #ff0000;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+  
+  /* Tambahan animasi teks glitch (opsional) */
+  @keyframes glitch {
+    0% { text-shadow: 2px 2px red; }
+    20% { text-shadow: -2px -2px lime; }
+    40% { text-shadow: 2px -2px blue; }
+    60% { text-shadow: -2px 2px orange; }
+    80% { text-shadow: 2px 2px purple; }
+    100% { text-shadow: 0 0 white; }
+  }
+  
+  h1, .signature {
+    animation: glitch 1.5s infinite;
+  }
+  
